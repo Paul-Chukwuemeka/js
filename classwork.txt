@@ -1,0 +1,27 @@
+### **Week 1, Day 2: Focus on if...else - Assignments**
+
+1. **Number Sign Checker**  
+   - Write a program that takes a number as input.  
+   - Use an `if...else` statement to print whether the number is positive, negative, or zero.
+
+2. **Even or Odd Determination**  
+   - Write a program that checks if a number is even or odd using an `if...else` construct.  
+   - Log an appropriate message for each case.
+
+3. **Age Group Classification**  
+   - Create a variable `age` and use a series of `if...else` statements to classify the age into categories (e.g., "Child" for ages 0–12, "Teen" for ages 13–19, "Adult" for ages 20–64, "Senior" for ages 65 and above).  
+   - Print the category.
+
+4. **Temperature Feedback**  
+   - Write a program that accepts a temperature value (in °C) as input.  
+   - Using `if...else` statements, print a message like:  
+     - "It's cold" for temperatures below 10°C,  
+     - "It's moderate" for temperatures between 10°C and 25°C,  
+     - "It's hot" for temperatures above 25°C.
+
+5. **Leap Year Checker**  
+   - Create a function that takes a year as input and uses `if...else` logic to determine if it's a leap year.  
+   - A leap year is divisible by 4, but not by 100 unless it is also divisible by 400.  
+   - Print whether the year is a leap year or not.
+
+Let me know if you'd like more exercises or modifications!
