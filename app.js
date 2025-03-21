@@ -1,198 +1,207 @@
-// // number - numerical value
-// // strings - alphabetical values
-// // boolean - true/false values
+// let number1 = Number(prompt("enter number 1"))
+// let number2 = Number(prompt("enter number 2"))
 
-// // let number = 100
-// // const string = 'hello there'
+//  const add = (a,b) => a + b
 
-// // console.log(number)
-// // console.log(string)
+// console.log(add(number1,number2) + 50)
 
-// // number = 200
-// // console.log(number)
-// // string = " hello me"
+// Write a function isEven(num) that returns true if
+// the number is even and false if it's odd.
 
-// // operators in js
-
-// // + - * / %
-
-// // Type conversion
-// let test = 100
-// test = String(test)
-// test = Number(test)
-
-// console.log(typeof (test))
-// // console.log(number + number)
-// // console.log(number * 5)
-// // console.log(number -100)
-// // console.log(number / 20)
-// // console.log(number % 3)
-
-// // For Week 1 Day 2, let's build on the basics:
-
-// // Assignment: Variables, Constants, and Operators
-
-// // 1. Working with Variables:
-
-// // Declare two variables x and y and assign them the values 5 and 10 respectively.
-
-// // Swap their values without using a third variable.
-
-// // Print the values of x and y before and after the swap.
-
-// // let x = 5
-// // let y = 10
-
-// // console.log(x)
-// // console.log(y)
-
-// // x = 10
-// // y = 5
-
-// // console.log(x)
-// // console.log(y)
-
-// // 2. Using Constants:
-
-// // Declare a constant variable PI with a value of 3.14159.
-
-// // Write a program that calculates the circumference of a circle using the formula: circumference = 2 * PI * radius.
-
-// // The radius should be stored in a variable and assigned any value you choose.
-
-// // const PI = 3.14159
-// // let radius = Number(prompt("Please enter the radius of the circle"))
-
-// // let circumference = 2 * PI * radius
-
-// // console.log(circumference)
-
-// // 3. Basic Operators:
-
-// // Create a small program that performs and prints the result of the following operations:
-
-// // Addition of two numbers.
-
-// // Subtraction of two numbers.
-
-// // Multiplication of two numbers.
-
-// // Division of two numbers.
-
-// // Modulus (remainder) of two numbers.
-
-// const number1 = 4
-// const number2 = 6
-
-// let addition = number1 + number2
-// console.log(addition)
-
-// let substraction = number1 - number2
-// console.log(substraction)
-
-// let multiplication = number1 * number2
-// console.log(multiplication)
-
-// let division = number1 / number2
-// console.log(division)
-
-// let modulus = number2 % number1
-// console.log(modulus)
-
-// // 4. String Concatenation:
-
-// // Declare two string variables firstName and lastName, assign them your first and last name.
-
-// // Concatenate these two strings and print the full name.
-
-// const firstName = " Cristiano "
-// const lastName = " Messi"
-
-// console.log(firstName + lastName)
-
-// // Submission Guidelines:
-
-// // Submit the code in a .js file.
-
-// // Let me know if you want to adjust anything!
-
-// // comparators
-// //  == - checks if values are similar
-// // === - checks if values and datatype are similar
-// console.log(100 == "100")
-// console.log(100 === "100")
-// // != - checks if values are not similar
-// // !== - checks if values and datatype  are not similar
-// console.log(100 != "100")
-// console.log(100 !== "100")
-
-// // > - checks if value is greater
-// // < - checks if value is lesser
-// // >= - checks if value is greater or equal
-// // <= - checks if value is lesser or equal
-// // console.log(100 > 50)
-// // console.log(100 < 50)
-// // console.log(100 >= 100)
-// // console.log(100 <= 100)
-
-// // conditionals in js
-
-// // if else statement
-// // switch statement
-
-// // if (100 < 20) {
-// //     console.log("100 is less than other value")
-// // }
-// // else {
-// //     console.log("100 is not less than other value")
-// // }
-
-// // let numberToCheck = prompt("please input a number")
-// // console.log(numberToCheck)
-
-// // if (!numberToCheck || isNaN(numberToCheck)){
-// //         alert("Invalid input,please input a number")
-// //         location.reload()
-// // }
-// // else {
-// //     if (numberToCheck > 0) {
-// //         alert("this number is positve")
-// //     }
-// //     else if (numberToCheck == 0) {
-// //         alert("this number is zero")
-// //     }
-// //     else if (numberToCheck < 0) {
-// //         alert("this number is negative")
-// //     }
-// // }
-
-// //
-
-// loops in js
-
-// for loop
-// while loop
-// do ... while loop
-
-// let test = 0;
-// for ( test; test <= 100; test++){
-//     console.log(test)
+// function isEven(num){
+//   if(num % 2 == 0 && num != 0 ){
+//     return true
+//   }
+//   else{
+//     return false
+//   }
 // }
 
-// let word = "javascript"
+// console.log(isEven(number1))
 
+// Write a function findMax(a, b, c) that returns the largest of the three numbers.
 
-// for (i = 0; i < word.length;i++){
-//     console.log(word[i])
+// const findMax = (a,b,c) => {
+//     let arr = [a,b,c]
+//     let largest = 0
+//     for(i= 0; i < arr.length;i++){
+//         if(arr[i] > largest){
+//             largest = arr[i]
+
+//         }
+//     }
+//     return largest
 // }
 
+// console.log(findMax(1000,2700,250))
 
-let numbers = [45,120,78,34,89,23,103]
-largest = 0
+// Write a function reverseString(str) that takes a string and returns the reversed version.
 
-for (let i = 0;i < numbers.length;i++){
-    if (numbers[i] > largest){
-        largest = numbers[i]
-    }
-    console.log(largest)
+//  const reverseString = function(str){
+//    let reverse = ""
+//    for(i = str.length - 1; i >= 0 ; i--){
+//     reverse += str[i]
+//    console.log(reverse)
+
+//    }
+//    console.log(reverse)
+//  }
+
+// reverseString("hello There")
+
+// Write a function factorial(n) that returns the factorial of a given number.
+// function factorial(n){
+//     let factorial = 1
+//     for(n; n >= 1; n--){
+//         factorial *= n
+//     }
+//     return factorial
+// }
+
+// console.log(factorial(10))
+// Write a function countVowels(str) that returns the number of vowels (a, e, i, o, u) in a given string.
+
+// const countVowels = (str) => {
+//   numOfVowels = 0;
+//   for (i = 0; i < str.length; i++) {
+//     if (str[i] === "a" || str[i] === 'e'|| str[i] === 'i'|| str[i] === 'o'|| str[i] === 'u' ) {
+//       numOfVowels += 1;
+//     }
+// }
+// console.log(numOfVowels)
+// };
+
+// countVowels("peter parker had a parker so it was a parker parker");
+
+// 7. Function to Print Multiplication Table
+// Write a function printTable(n) that prints the multiplication table of n.
+
+// function printTable(n){
+// for(number = 10; number >= 1;number--){
+//     console.log(number * n)
+// }
+// }
+// printTable(5)
+
+// Write a function isPrime(n)
+// that returns true if the number is prime and false otherwise.
+
+// function isPrime(n) {
+//   let result = "";
+//   if (n == 2 || n == 3) {
+//     result = "prime number";
+//   } else {
+//     if (n == 0){
+//     result = ' Zero is not prime number'
+//     }
+//     for (i = n - 1; i > 1; i--) {
+//       if (n % i == 0) {
+//         result = " not prime number";
+//       } else {
+//         result = "prime number";
+//       }
+//     }
+// }
+// alert(result)
+// }
+
+// isPrime(509);
+
+//Write a function square(num) that returns the square of a number.
+// function square(num) {
+//   console.log(num * num);
+// }
+// square(4)
+
+// 2. Function to Convert Minutes to Seconds
+// Write a function toSeconds(minutes) that converts minutes to seconds
+// function toSeconds(minutes){
+//   console.log(minutes * 60)
+
+// }
+// toSeconds(3)
+
+// 3. Function to Check if a String is a Palindrome
+// Write a function isPalindrome(str) that returns true if the string is a palindrome (same forward and backward) and false otherwise
+// function isPalindrome(str){
+//   let reverse = ""
+//   for(i = str.length - 1; i >= 0 ;i--){
+//     reverse = reverse + str[i]
+//   }
+//   console.log(reverse)
+//   if(reverse == str){
+//     console.log("this is a palidrome")
+//   }
+//   else{
+//     console.log("this is not a palidrome")
+//   }
+// }
+// // isPalindrome("madam")
+
+// 4. Function to Count Words in a Sentence
+// Write a function countWords(sentence) that returns the number of words in a given sentence
+
+// function countWords(str){
+// let splitSentence = str.split(" ")
+// console.log(splitSentence.length)
+// }
+// countWords("obi went to the river to fetch water")
+// js split allow you to split an string in an array
+
+// 5. Function to Find the Smallest Number in an Array
+// Write a function findMin(arr) that returns the smallest number from an array of numbers
+// function findSmall(arr){
+// smallest = arr[0]
+// for(i = 0; i < arr.length; i++ ){
+//     if(smallest > arr[i]){
+//         smallest = arr[i]
+//     }
+// }
+// console.log(smallest)
+// }
+// findSmall([100, 200, 50, 300, 400])
+
+
+// 6. Function to Merge Two Arrays
+// Write a function mergeArrays(arr1, arr2) that merges two arrays into one
+// function mergeArrays(arr1, arr2){
+// console.log(arr1 +","+ arr2)
+// }
+// mergeArrays([1,2,4,6,8] ,[3,6,7,9])
+
+// 7. Function to Remove Duplicates from an Array
+// Write a function removeDuplicates(arr) that removes duplicate values from an array.
+// function removeDuplicate(arr){
+// for(i = 0; i < arr.length; i++)
+//         for(a = 0; a < arr.length;a++){
+//             if(i != a && arr[i] == arr[a]){
+//                 arr.splice(i,1)
+//             }
+//         }
+//         console.log(arr)
+// }
+// removeDuplicate([1,2,3,4,4,5,6])
+
+// 8. Function to Check if a Number is a Perfect Square
+// Write a function isPerfectSquare(num) that returns true if the number is a perfect square, otherwise false
+// function isPerfectSquare(num){
+//     const sqrt = Math.sqrt(num)
+//     console.log(sqrt)
+//     console.log(Math.round(sqrt))
+//     if(sqrt == Math.floor(sqrt)){
+//         console.log(true)
+//     }
+//     else{
+//         console.log(false)
+//     }
+// }
+// isPerfectSquare(49)
+
+// 1. Function to Calculate the Power of a Number*  
+// Write a function power(base, exponent) that returns the result of base raised to exponent.  
+
+function power(base,exponent) {
+    console.log(base ** exponent)
 }
+
+power(8,9087)
